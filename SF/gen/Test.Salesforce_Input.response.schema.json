@@ -1,0 +1,106 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Id": {
+      "title": "Record ID",
+      "nullable": false,
+      "type": "string"
+    },
+    "IsDeleted": {
+      "title": "Deleted",
+      "nullable": false,
+      "type": "boolean"
+    },
+    "Name": {
+      "title": "Owner / Affiliate Name",
+      "nullable": false,
+      "type": "string"
+    },
+    "CreatedDate": {
+      "title": "Created Date",
+      "nullable": false,
+      "type": "string",
+      "format": "date-time"
+    },
+    "CreatedById": {
+      "title": "Created By ID",
+      "nullable": false,
+      "type": "string"
+    },
+    "LastModifiedDate": {
+      "title": "Last Modified Date",
+      "nullable": false,
+      "type": "string",
+      "format": "date-time"
+    },
+    "LastModifiedById": {
+      "title": "Last Modified By ID",
+      "nullable": false,
+      "type": "string"
+    },
+    "SystemModstamp": {
+      "title": "System Modstamp",
+      "nullable": false,
+      "type": "string",
+      "format": "date-time"
+    },
+    "ConnectionReceivedId": {
+      "title": "Received Connection ID",
+      "nullable": true,
+      "type": "string"
+    },
+    "ConnectionSentId": {
+      "title": "Sent Connection ID",
+      "nullable": true,
+      "type": "string"
+    },
+    "Account__c": {
+      "title": "Co-Owner/Affiliate",
+      "nullable": true,
+      "type": "string"
+    },
+    "Role__c": {
+      "title": "Role",
+      "enum": [
+        "Affiliate",
+        "Operator",
+        "Owner"
+      ],
+      "nullable": true,
+      "type": "string"
+    },
+    "Owned_Aircraft__c": {
+      "title": "Owned Aircraft",
+      "nullable": false,
+      "type": "string"
+    },
+    "Tail_Number__c": {
+      "title": "Tail Number",
+      "nullable": true,
+      "type": "string"
+    },
+    "Year_Manufactured__c": {
+      "title": "Year Manufactured",
+      "nullable": true,
+      "type": "string"
+    },
+    "Year_Delivered__c": {
+      "title": "Year Delivered",
+      "nullable": true,
+      "type": "string"
+    },
+    "Operator__c": {
+      "title": "Operator",
+      "nullable": true,
+      "type": "string"
+    },
+    "Base_Location__c": {
+      "title": "Base Location",
+      "nullable": true,
+      "type": "string"
+    }
+  },
+  "title": "Owner_Affiliate__c",
+  "additionalProperties": false
+}
